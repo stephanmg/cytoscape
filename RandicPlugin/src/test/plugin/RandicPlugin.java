@@ -90,6 +90,12 @@ public class RandicPlugin extends CytoscapePlugin {
             Double degreeSum=0.;
             System.out.println("RUNNING...");
             
+                 int N = network.getNodeCount();
+            if (N == 0) {
+                 JOptionPane.showMessageDialog(view.getComponent(), "No network/view loaded.");
+                 return;
+            }
+            
             Double IRandic = 0.0;
             // do fancy analysis here:
             System.out.println(network.getNodeCount());

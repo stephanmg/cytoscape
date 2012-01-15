@@ -92,6 +92,10 @@ public class PluginEx extends CytoscapePlugin {
             }
 
             int N = network.getNodeCount();
+            if (N == 0) {
+                 JOptionPane.showMessageDialog(view.getComponent(), "No network/view loaded.");
+                 return;
+            }
          
             double[][] A = new double[N][N];
             for (int i = 0; i < N; i++) {
@@ -102,9 +106,11 @@ public class PluginEx extends CytoscapePlugin {
 
                      for (CyEdge edge : (List<CyEdge>) network.edgesList()) {
 
-                int i = edge.getSource().getRootGraphIndex();
+               int i = edge.getSource().getRootGraphIndex();
                 int j = edge.getTarget().getRootGraphIndex();
                 
+               
+                        
                 A[i][j] = 1;
 
             }

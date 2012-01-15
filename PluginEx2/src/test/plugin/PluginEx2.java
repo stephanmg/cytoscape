@@ -89,8 +89,11 @@ public class PluginEx2 extends CytoscapePlugin {
                 return;
             }
 
-            int N = network.getNodeCount();
-            N = 5;
+               int N = network.getNodeCount();
+            if (N == 0) {
+                 JOptionPane.showMessageDialog(view.getComponent(), "No network/view loaded.");
+                 return;
+            }
 
             double[][] A = new double[N][N];
             for (int i = 0; i < N; i++) {
