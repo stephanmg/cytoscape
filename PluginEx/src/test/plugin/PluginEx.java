@@ -126,13 +126,9 @@ public class PluginEx extends CytoscapePlugin {
             double[][] res2 = res.getArrayCopy();
             
              StringBuilder sb = new StringBuilder("");
-            for (int i = 0; i < N; i++) {
-                sb.append("C(");
-                sb.append(i);
-                sb.append("): ");
-                sb.append((res2[i][0]));
-                sb.append("\n");
-            }
+            for (int i = 0; i < N; i++)
+                sb.append("C(").append(i).append("): ").append((res2[i][0])).append("\n");
+           
             
 
 
