@@ -79,11 +79,7 @@ public class RandicPlugin extends CytoscapePlugin {
             CyNetwork network = Cytoscape.getCurrentNetwork();
             //get the network view object
             CyNetworkView view = Cytoscape.getCurrentNetworkView();
-            //can't continue if either of these is null
-            if (network == null || view == null) {
-                JOptionPane.showMessageDialog(view.getComponent(), "No network/view loaded.");
-                return;
-            }
+         
             
             
             Double nodeNr=0.;

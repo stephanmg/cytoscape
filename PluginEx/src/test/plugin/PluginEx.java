@@ -85,12 +85,7 @@ public class PluginEx extends CytoscapePlugin {
             CyNetwork network = Cytoscape.getCurrentNetwork();
             //get the network view object
             CyNetworkView view = Cytoscape.getCurrentNetworkView();
-            //can't continue if either of these is null
-            if (network == null || view == null) {
-                JOptionPane.showMessageDialog(view.getComponent(), "No network/view loaded.");
-                return;
-            }
-
+          
             int N = network.getNodeCount();
             if (N == 0) {
                  JOptionPane.showMessageDialog(view.getComponent(), "No network/view loaded.");
@@ -98,13 +93,10 @@ public class PluginEx extends CytoscapePlugin {
             }
          
             double[][] A = new double[N][N];
-            for (int i = 0; i < N; i++) {
-                for (int j = 0; j < N; j++) {
-                    A[i][j] = 0.0;
-                }
-            }
-
-                     for (CyEdge edge : (List<CyEdge>) network.edgesList()) {
+            for (double[] row : A)
+                Arrays.fill(row, 0.0);
+          
+            for (CyEdge edge : (List<CyEdge>) network.edgesList()) {
 
                int i = edge.getSource().getRootGraphIndex();
                 int j = edge.getTarget().getRootGraphIndex();
@@ -125,7 +117,7 @@ public class PluginEx extends CytoscapePlugin {
 
             double[][] res2 = res.getArrayCopy();
             
-             StringBuilder sb = new StringBuilder("");
+             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < N; i++)
                 sb.append("C(").append(i).append("): ").append((res2[i][0])).append("\n");
            
