@@ -68,7 +68,7 @@ public class PluginEx extends CytoscapePlugin {
          * The constructor sets the text that should appear on the menu item.
          */
         public MolbiPluginAction() {
-            super("PluginKatz");
+            super("PluginKatz (alpha = 0.1)");
         }
 
         /**
@@ -92,8 +92,7 @@ public class PluginEx extends CytoscapePlugin {
             }
 
             int N = network.getNodeCount();
-            N = 5;
- 
+         
             double[][] A = new double[N][N];
             for (int i = 0; i < N; i++) {
                 for (int j = 0; j < N; j++) {
@@ -105,7 +104,7 @@ public class PluginEx extends CytoscapePlugin {
 
                 int i = edge.getSource().getRootGraphIndex();
                 int j = edge.getTarget().getRootGraphIndex();
-
+                
                 A[i][j] = 1;
 
             }
@@ -114,23 +113,24 @@ public class PluginEx extends CytoscapePlugin {
             Matrix I = Matrix.identity(N, N);
             Matrix IVec = Matrix.identity(1, N);
 
-            double[] svds = M.svd().getSingularValues();
-
-            double alpha = 1.0 / svds[svds.length - 1];
-            alpha = 0.5;
+            double alpha = 0.1; // emulates degree centrality
 
             Matrix res = ((I.minus(M.transpose().times(alpha))).inverse()).minus(I).times(I);
 
             double[][] res2 = res.getArrayCopy();
             
-            String res_str="";
-        
+             StringBuilder sb = new StringBuilder("");
             for (int i = 0; i < N; i++) {
-                res_str += "C(" + i + "): " + (res2[i][0]) + "\n";
+                sb.append("C(");
+                sb.append(i);
+                sb.append("): ");
+                sb.append((res2[i][0]));
+                sb.append("\n");
             }
+            
 
 
-            JOptionPane.showMessageDialog(view.getComponent(), "All done.\n" + res_str);
+            JOptionPane.showMessageDialog(view.getComponent(), "All done.\n" + sb.toString());
             //tell the view to redraw since we've changed the selection
             view.redrawGraph(false, true);
         }
