@@ -98,7 +98,7 @@ public class RandicPlugin extends CytoscapePlugin {
             for (CyNode node : (List<CyNode>)network.nodesList()) {
                 nodeNr++;
                
-                IRandic += Math.pow(network.getDegree(node), 0.5);
+                IRandic += Math.pow(network.getDegree(node), -0.5);
                 
                 System.out.println(node.toString());
                 degreeSum += network.getDegree(node);

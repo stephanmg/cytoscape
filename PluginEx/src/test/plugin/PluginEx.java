@@ -27,6 +27,7 @@ import cytoscape.view.CyNetworkView;
 import cytoscape.data.Semantics;
 
 import Jama.Matrix;
+import java.text.DecimalFormat;
 
 /**
  * This is a sample Cytoscape plugin using core graph and data structures.
@@ -86,7 +87,7 @@ public class PluginEx extends CytoscapePlugin {
             //get the network view object
             CyNetworkView view = Cytoscape.getCurrentNetworkView();
           
-            int N = network.getNodeCount();
+            int N = network.getNodeCount()+1;
             if (N == 0) {
                  JOptionPane.showMessageDialog(view.getComponent(), "No network/view loaded.");
                  return;
@@ -95,36 +96,40 @@ public class PluginEx extends CytoscapePlugin {
             double[][] A = new double[N][N];
             for (double[] row : A)
                 Arrays.fill(row, 0.0);
-          
+          //JOptionPane.showMessageDialog(view.getComponent(), "Vor  FOR");
             for (CyEdge edge : (List<CyEdge>) network.edgesList()) {
-
-               int i = edge.getSource().getRootGraphIndex();
-                int j = edge.getTarget().getRootGraphIndex();
-                
+               
+               int i = Math.abs(edge.getSource().getRootGraphIndex());
+                int j = Math.abs(edge.getTarget().getRootGraphIndex());
+                //JOptionPane.showMessageDialog(view.getComponent(), "IN  FOR: "+ i +", "+j+"N: "+N);
                
                         
-                A[i][j] = 1;
+               A[i][j] = 1;
 
             }
-
+//JOptionPane.showMessageDialog(view.getComponent(), "Nach FOR");
             Matrix M = new Matrix(A);
             Matrix I = Matrix.identity(N, N);
-            Matrix IVec = Matrix.identity(1, N);
+            Matrix IVec = new Matrix(N,1,1.0);
 
             double alpha = 0.1; // emulates degree centrality
 
-            Matrix res = ((I.minus(M.transpose().times(alpha))).inverse()).minus(I).times(I);
+            Matrix res = ((I.minus(M.transpose().times(alpha))).inverse()).minus(I).times(IVec);
 
             double[][] res2 = res.getArrayCopy();
             
              StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < N; i++)
-                sb.append("C(").append(i).append("): ").append((res2[i][0])).append("\n");
-           
+             DecimalFormat f= new DecimalFormat("#0.000");
+            for (int i = 1; i < N; i++){
+                if(i % 10 == 0){
+                    sb.append("\n");
+                }
+                sb.append("C(").append(i).append("): ").append(f.format(res2[i][0])).append("   ");
+            }
             
 
 
-            JOptionPane.showMessageDialog(view.getComponent(), "All done.\n" + sb.toString());
+            JOptionPane.showMessageDialog(view.getComponent(), "All done.\n" + sb);
             //tell the view to redraw since we've changed the selection
             view.redrawGraph(false, true);
         }
