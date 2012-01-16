@@ -54,7 +54,7 @@ public class PluginEx2 extends CytoscapePlugin {
      * Gives a description of this plugin.
      */
     public String describe() {
-        String sb = "no function yet";
+        String sb = "Plugin to calculate the topological Katz Index for network";
         return sb;
     }
 
@@ -67,7 +67,7 @@ public class PluginEx2 extends CytoscapePlugin {
          * The constructor sets the text that should appear on the menu item.
          */
         public MolbiPluginAction() {
-            super("PluginKatz (alpha = 1/lambda_max)");
+            super("Katz's Index (alpha = 1/lambda_max)");
         }
 
         /**
@@ -76,7 +76,6 @@ public class PluginEx2 extends CytoscapePlugin {
         public void actionPerformed(ActionEvent ae) {
             run();
 
-
         }
 
         private void run() {
@@ -84,17 +83,18 @@ public class PluginEx2 extends CytoscapePlugin {
             CyNetwork network = Cytoscape.getCurrentNetwork();
             //get the network view object
             CyNetworkView view = Cytoscape.getCurrentNetworkView();
-          
 
-               int N = network.getNodeCount()+1;
+
+            int N = network.getNodeCount() + 1;
             if (N == 0) {
-                 JOptionPane.showMessageDialog(view.getComponent(), "No network/view loaded.");
-                 return;
+                JOptionPane.showMessageDialog(view.getComponent(), "No network/view loaded.");
+                return;
             }
 
             double[][] A = new double[N][N];
-          for (double[] row : A)
-            Arrays.fill(row, 0.0);
+            for (double[] row : A) {
+                Arrays.fill(row, 0.0);
+            }
 
             for (CyEdge edge : (List<CyEdge>) network.edgesList()) {
 
@@ -107,7 +107,7 @@ public class PluginEx2 extends CytoscapePlugin {
 
             Matrix M = new Matrix(A);
             Matrix I = Matrix.identity(N, N);
-            Matrix IVec = new Matrix(N,1,1.0);
+            Matrix IVec = new Matrix(N, 1, 1.0);
 
             double[] eigs = M.eig().getRealEigenvalues();
             double alpha;
@@ -116,16 +116,16 @@ public class PluginEx2 extends CytoscapePlugin {
             if (eigs[eigs.length - 1] == 0) {
                 alpha = 1.0;
             } else {
-                alpha = 1.0 / eigs[eigs.length-1];
+                alpha = 1.0 / eigs[eigs.length - 1];
             }
 
             Matrix res = ((I.minus(M.transpose().times(alpha))).inverse()).minus(I).times(IVec);
 
             double[][] res2 = res.getArrayCopy();
             StringBuilder sb = new StringBuilder();
-            DecimalFormat f= new DecimalFormat("#0.000");
-            for (int i = 1; i < N; i++){
-                if(i % 10 ==0){
+            DecimalFormat f = new DecimalFormat("#0.000");
+            for (int i = 1; i < N; i++) {
+                if (i % 10 == 0) {
                     sb.append("\n");
                 }
                 sb.append("C(").append(i).append("): ").append(f.format(res2[i][0])).append("   ");

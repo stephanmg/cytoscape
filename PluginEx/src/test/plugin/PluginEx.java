@@ -1,9 +1,7 @@
- /**
+/**
  * @author stephanmg
  * @date 01m13d12y
  */
-
-
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -56,7 +54,7 @@ public class PluginEx extends CytoscapePlugin {
      * Gives a description of this plugin.
      */
     public String describe() {
-        String sb = "no function yet";
+        String sb = "Plugin to calculate the topological Katz Index for networks";
         return sb;
     }
 
@@ -69,7 +67,7 @@ public class PluginEx extends CytoscapePlugin {
          * The constructor sets the text that should appear on the menu item.
          */
         public MolbiPluginAction() {
-            super("PluginKatz (alpha = 0.1)");
+            super("Katz's Index (alpha = 0.1)");
         }
 
         /**
@@ -77,8 +75,6 @@ public class PluginEx extends CytoscapePlugin {
          */
         public void actionPerformed(ActionEvent ae) {
             run();
-
-
         }
 
         private void run() {
@@ -86,47 +82,46 @@ public class PluginEx extends CytoscapePlugin {
             CyNetwork network = Cytoscape.getCurrentNetwork();
             //get the network view object
             CyNetworkView view = Cytoscape.getCurrentNetworkView();
-          
-            int N = network.getNodeCount()+1;
+
+            int N = network.getNodeCount() + 1;
             if (N == 0) {
-                 JOptionPane.showMessageDialog(view.getComponent(), "No network/view loaded.");
-                 return;
+                JOptionPane.showMessageDialog(view.getComponent(), "No network/view loaded.");
+                return;
             }
-         
+
             double[][] A = new double[N][N];
-            for (double[] row : A)
+            for (double[] row : A) {
                 Arrays.fill(row, 0.0);
-          //JOptionPane.showMessageDialog(view.getComponent(), "Vor  FOR");
+            }
+
             for (CyEdge edge : (List<CyEdge>) network.edgesList()) {
-               
-               int i = Math.abs(edge.getSource().getRootGraphIndex());
+
+                int i = Math.abs(edge.getSource().getRootGraphIndex());
                 int j = Math.abs(edge.getTarget().getRootGraphIndex());
-                //JOptionPane.showMessageDialog(view.getComponent(), "IN  FOR: "+ i +", "+j+"N: "+N);
-               
-                        
-               A[i][j] = 1;
+
+                A[i][j] = 1;
 
             }
-//JOptionPane.showMessageDialog(view.getComponent(), "Nach FOR");
+
             Matrix M = new Matrix(A);
             Matrix I = Matrix.identity(N, N);
-            Matrix IVec = new Matrix(N,1,1.0);
+            Matrix IVec = new Matrix(N, 1, 1.0);
 
             double alpha = 0.1; // emulates degree centrality
 
             Matrix res = ((I.minus(M.transpose().times(alpha))).inverse()).minus(I).times(IVec);
 
             double[][] res2 = res.getArrayCopy();
-            
-             StringBuilder sb = new StringBuilder();
-             DecimalFormat f= new DecimalFormat("#0.000");
-            for (int i = 1; i < N; i++){
-                if(i % 10 == 0){
+
+            StringBuilder sb = new StringBuilder();
+            DecimalFormat f = new DecimalFormat("#0.000");
+            for (int i = 1; i < N; i++) {
+                if (i % 10 == 0) {
                     sb.append("\n");
                 }
                 sb.append("C(").append(i).append("): ").append(f.format(res2[i][0])).append("   ");
             }
-            
+
 
 
             JOptionPane.showMessageDialog(view.getComponent(), "All done.\n" + sb);

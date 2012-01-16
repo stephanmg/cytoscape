@@ -35,7 +35,7 @@ import cytoscape.data.Semantics;
  * graph and its view.
  */
 public class RandicPlugin extends CytoscapePlugin {
-    
+
     /**
      * This constructor creates an action and adds it to the Plugins menu.
      */
@@ -47,72 +47,62 @@ public class RandicPlugin extends CytoscapePlugin {
         //and add it to the menus
         Cytoscape.getDesktop().getCyMenus().addAction(action);
     }
-    
+
     /**
      * Gives a description of this plugin.
      */
     public String describe() {
-        String sb = "no function yet";
+        String sb = "Plugin to calculate the Index of Randic for networks";
         return sb;
     }
-        
+
     /**
      * This class gets attached to the menu item.
      */
     public class MolbiPluginAction extends CytoscapeAction {
+
         /**
          * The constructor sets the text that should appear on the menu item.
          */
-        public MolbiPluginAction() {super("RandicPlugin");}
-        
+        public MolbiPluginAction() {
+            super("Randic's Index");
+        }
+
         /**
          * This method is called when the user selects the menu item.
          */
         public void actionPerformed(ActionEvent ae) {
             run();
-            
+
 
         }
-        
-        private void run(){
+
+        private void run() {
             //get the network object; this contains the graph
             CyNetwork network = Cytoscape.getCurrentNetwork();
             //get the network view object
             CyNetworkView view = Cytoscape.getCurrentNetworkView();
-         
-            
-            
-            Double nodeNr=0.;
-            Double degreeSum=0.;
-            System.out.println("RUNNING...");
-            
-                 int N = network.getNodeCount();
+
+
+            int N = network.getNodeCount();
             if (N == 0) {
-                 JOptionPane.showMessageDialog(view.getComponent(), "No network/view loaded.");
-                 return;
+                JOptionPane.showMessageDialog(view.getComponent(), "No network/view loaded.");
+                return;
             }
-            
+
             Double IRandic = 0.0;
             // do fancy analysis here:
             System.out.println(network.getNodeCount());
-            for (CyNode node : (List<CyNode>)network.nodesList()) {
-                nodeNr++;
-               
+            for (CyNode node : (List<CyNode>) network.nodesList()) {
+
                 IRandic += Math.pow(network.getDegree(node), -0.5);
-                
-                System.out.println(node.toString());
-                degreeSum += network.getDegree(node);
-                System.out.println(degreeSum);
+
             }
-            
-            System.out.println("DONE.");
-            Double avrg = degreeSum / nodeNr;
-            JOptionPane.showMessageDialog(view.getComponent(), "All done.\nRandic Index "+IRandic);
+
+
+            JOptionPane.showMessageDialog(view.getComponent(), "All done.\nRandic Index " + IRandic);
             //tell the view to redraw since we've changed the selection
             view.redrawGraph(false, true);
         }
-        
-
     }
 }
-
