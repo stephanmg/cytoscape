@@ -13,17 +13,12 @@ import java.util.*;
 import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
 
-import giny.model.Node;
-import giny.view.NodeView;
-
 import cytoscape.plugin.CytoscapePlugin;
 import cytoscape.util.CytoscapeAction;
 import cytoscape.Cytoscape;
 import cytoscape.CyNetwork;
 import cytoscape.CyNode;
-import cytoscape.CyEdge;
 import cytoscape.view.CyNetworkView;
-import cytoscape.data.Semantics;
 
 /**
  * This is a sample Cytoscape plugin using core graph and data structures. 
@@ -71,6 +66,7 @@ public class RandicPlugin extends CytoscapePlugin {
         /**
          * This method is called when the user selects the menu item.
          */
+        @Override
         public void actionPerformed(ActionEvent ae) {
             run();
 

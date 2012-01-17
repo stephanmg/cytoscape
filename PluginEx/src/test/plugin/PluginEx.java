@@ -12,17 +12,12 @@ import java.util.*;
 import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
 
-import giny.model.Node;
-import giny.view.NodeView;
-
 import cytoscape.plugin.CytoscapePlugin;
 import cytoscape.util.CytoscapeAction;
 import cytoscape.Cytoscape;
 import cytoscape.CyNetwork;
-import cytoscape.CyNode;
 import cytoscape.CyEdge;
 import cytoscape.view.CyNetworkView;
-import cytoscape.data.Semantics;
 
 import Jama.Matrix;
 import java.text.DecimalFormat;
@@ -73,6 +68,7 @@ public class PluginEx extends CytoscapePlugin {
         /**
          * This method is called when the user selects the menu item.
          */
+        @Override
         public void actionPerformed(ActionEvent ae) {
             run();
         }
