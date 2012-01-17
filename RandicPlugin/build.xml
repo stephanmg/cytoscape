@@ -7,8 +7,8 @@
 <!-- the Compile on Save feature is turned off for the project. -->
 <!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
 <!-- in the project's Project Properties dialog box.-->
-<project name="RandicPlugin" default="default" basedir=".">
-    <description>Builds, tests, and runs the project RandicPlugin.</description>
+<project name="PluginEx" default="default" basedir=".">
+    <description>Builds, tests, and runs the project PluginEx.</description>
     <import file="nbproject/build-impl.xml"/>
     <!--
 
@@ -59,7 +59,7 @@
 
     An example of overriding the target for project execution could look like this:
 
-        <target name="run" depends="RandicPlugin-impl.jar">
+        <target name="run" depends="PluginEx-impl.jar">
             <exec dir="bin" executable="launcher.exe">
                 <arg file="${dist.jar}"/>
             </exec>
@@ -69,6 +69,15 @@
     the compile target as the regular run target does. Again, for a list of available 
     properties which you can use, check the target you are overriding in the
     nbproject/build-impl.xml file. 
+      -->
+    <property file="build.properties"/>
+    
+    <target name="-post-jar">
+        <echo message="Copying ${dist.jar} to ${cytoscape.dir}/plugins/"/>
+        <copy 
+        file="${dist.jar}" 
+        todir="${cytoscape.dir}/plugins/"/>
+    </target>
 
-    -->
+    
 </project>

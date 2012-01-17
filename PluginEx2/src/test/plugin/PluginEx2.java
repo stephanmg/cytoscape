@@ -79,6 +79,8 @@ public class PluginEx2 extends CytoscapePlugin {
         }
 
         private void run() {
+            
+            
             //get the network object; this contains the graph
             CyNetwork network = Cytoscape.getCurrentNetwork();
             //get the network view object
@@ -86,7 +88,7 @@ public class PluginEx2 extends CytoscapePlugin {
 
 
             int N = network.getNodeCount() + 1;
-            if (N == 0) {
+            if (N == 1) {
                 JOptionPane.showMessageDialog(view.getComponent(), "No network/view loaded.");
                 return;
             }
@@ -108,6 +110,7 @@ public class PluginEx2 extends CytoscapePlugin {
             Matrix M = new Matrix(A);
             Matrix I = Matrix.identity(N, N);
             Matrix IVec = new Matrix(N, 1, 1.0);
+        
 
             double[] eigs = M.eig().getRealEigenvalues();
             double alpha;

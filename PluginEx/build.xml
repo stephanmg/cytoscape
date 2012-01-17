@@ -69,6 +69,16 @@
     the compile target as the regular run target does. Again, for a list of available 
     properties which you can use, check the target you are overriding in the
     nbproject/build-impl.xml file. 
+      -->
+    <property file="build.properties"/>
+    
+    <target name="-post-jar">
+        <echo message="Copying ${dist.jar} to ${cytoscape.dir}/plugins/"/>
+        <copy 
+        file="${dist.jar}" 
+        todir="${cytoscape.dir}/plugins/"/>
+    </target>
 
-    -->
+
+    
 </project>
