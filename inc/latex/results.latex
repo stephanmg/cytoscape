@@ -1,0 +1,21 @@
+\section{Results}
+\begin{frame}{Results I}
+\dots give example results from network 1 and network2
+\begin{figure}
+\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/AvgClustCoeffDistr.png}}\hfill
+\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/AvgClusteringCoeffDistr.png}}
+\caption{Avgerage Clustering Coefficient Centrality}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Results II}
+\begin{figure}
+\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/BetweennessCentr.png}}\hfill
+\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/BetweennessCentr.png}}
+\caption{Betweeness Centrality}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Differences}
+\dots to our groups results
+\end{frame}

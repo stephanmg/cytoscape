@@ -1,0 +1,13 @@
+\begin{frame}
+ \titlepage
+\end{frame}
+\begin{frame}
+ \frametitle{Outline}
+ \tableofcontents
+\end{frame}
+\AtBeginSection[]
+{
+  \begin{frame}[plain]{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
