@@ -101,7 +101,6 @@ public class PluginEx extends CytoscapePlugin {
 
             }
 
-        
             Matrix M = new Matrix(A);
             Matrix I = Matrix.identity(N, N);
             Matrix IVec = new Matrix(N, 1, 1.0);

@@ -1,0 +1,48 @@
+\documentclass[hyperref={bookmarks=true}]{beamer}
+   \title[Netzwerkanalyse mit Cytoscape]{Netzwerkanalyse mit Cytoscape}
+   \author[Gruppe 1]{Kai, Stefan und Stephan}
+   \date{02/08/12}
+   \institute{VL Systembiologie}
+
+   \usepackage{amsmath}
+   \usepackage{subfigure}
+   \usepackage{booktabs}
+   \usepackage{color}
+   \usepackage{stmaryrd}
+   \usepackage{movie15}
+   \usepackage[utf8]{inputenc}
+   \usepackage[T1]{fontenc}
+   \usepackage{ae,aecompl}
+
+   \setlength{\heavyrulewidth}{0.10em}
+   \setlength{\lightrulewidth}{0.03em}
+   \numberwithin{equation}{subsection}
+
+   \usetheme{Boadilla}
+   \usecolortheme{whale}
+   \mode<presentation>
+   \hypersetup
+   {
+      pdfauthor={Stephan Matthias Grein},
+      pdftitle={VL Systembiologie},
+      pdfsubject={Netzwerke, topologische Charakteristika, Zentralitäten},
+      bookmarksopen=true,
+      bookmarksopenlevel=3,
+      bookmarksnumbered,
+      pageanchor,
+      plainpages=false
+   }
+
+   \newtheorem*{remark}{Remark}
+   \newtheorem*{aims}{Aims}
+   \newcommand{\myspace}{\vspace{0.2em}}
+   \renewcommand*\thesubfigure{(\alph{subfigure})}
+   \renewcommand*\figurename{Fig. \thefigure}
+
+\begin{document}
+   \input{inc/latex/title.latex}
+   \input{inc/latex/introduction.latex}
+   \input{inc/latex/code.latex}
+   \input{inc/latex/results.latex}
+   \input{inc/latex/conclusion.latex}
+\end{document}
