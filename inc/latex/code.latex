@@ -1,8 +1,37 @@
 \section{Code}
-\begin{frame}{Code I}
-\dots Plugin 1 + explanation of code
+\begin{frame}{Plugin for calculation of Katz's Index}
+\begin{definition}[Katz's Index]
+\dots
+\end{definition}
+We considered two cases: $\alpha$ small and $\alpha = \frac{1}{\lambda_{max}}$.
+\end{frame}
+\begin{frame}{Plugin for calculation of Katz's Index - $\alpha$ small}
+\lstinputlisting[firstnumber=1, language=Java, label=KatzPlugin,caption=Necessary import statements]{inc/source/plugin1/Lst1.java}
+\end{frame}
+\begin{frame}{Plugin for calculation of Katz's Index - $\alpha$ small}
+\lstinputlisting[firstnumber=16, language=Java, label=KatzPlugin,caption=Basic class definition]{inc/source/plugin1/Lst2.java}
+\end{frame}
+\begin{frame}{Plugin for calculation of Katz's Index - $\alpha$ small}
+\lstinputlisting[firstnumber=38, language=Java, label=KatzPlugin,caption=Run method (I)]{inc/source/plugin1/Lst3.java}
+\end{frame}
+\begin{frame}{Plugin for calculation of Katz's Index - $\alpha$ small}
+\lstinputlisting[firstnumber=57, language=Java, label=KatzPlugin,caption=Run method (II)]{inc/source/plugin1/Lst4.java}
+\end{frame}
+\begin{frame}{Plugin for calculation of Katz's Index - $\alpha = \frac{1}{\lambda_{max}}$}
+\lstinputlisting[firstnumber=57, language=Java, label=KatzPlugin,caption=Run method (II)]{inc/source/plugin2/Lst5.java}
 \end{frame}
 
-\begin{frame}{Code II}
-\dots Plugin 2 + explanations of code
+\begin{frame}{Plugin for calculation of Randic's Index}
+\begin{definition}[Randics's Index]
+\dots
+\end{definition}
+\end{frame}
+\begin{frame}{Plugin for calculation of Randic's Index}
+\lstinputlisting[firstnumber=1, language=Java, label=RandicPlugin,caption=Necessary import statements]{inc/source/plugin3/Lst6.java}
+\end{frame}
+\begin{frame}{Plugin for calculation of Randic's Index}
+\lstinputlisting[firstnumber=16, language=Java, label=RandicPlugin,caption=Basic class definition]{inc/source/plugin3/Lst7.java}
+\end{frame}
+\begin{frame}{Plugin for calculation of Randic's Index}
+\lstinputlisting[firstnumber=38, language=Java, label=RandicPlugin,caption=Run method]{inc/source/plugin3/Lst8.java}
 \end{frame}

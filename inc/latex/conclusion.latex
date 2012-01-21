@@ -1,9 +1,13 @@
 \section{Conclusion}
 \begin{frame}{Conclusion}
-\dots benefits of cytoscape compared to the other tools?
+\begin{block}{Benefits of cytoscape}
+...
+\end{block}
 \end{frame}
 
 \section{Resources}
 \begin{frame}{Resources}
-\dots Where to find the plugins and how to build them
+\begin{block}{Git repository}
+git://gitorious.org/cytoscape-plugins/cytoscape-plugins.git
+\end{block}
 \end{frame}

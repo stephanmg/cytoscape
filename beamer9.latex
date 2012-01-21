@@ -1,8 +1,8 @@
 \documentclass[hyperref={bookmarks=true}]{beamer}
-   \title[Netzwerkanalyse mit Cytoscape]{Netzwerkanalyse mit Cytoscape}
-   \author[Gruppe 1]{Kai, Stefan und Stephan}
+   \title[Network analysis with Cytoscape]{Network analysis with Cytoscape}
+   \author[Group 1]{Kai, Stefan \& Stephan}
    \date{02/08/12}
-   \institute{VL Systembiologie}
+   \institute{Lecture system's biology}
 
    \usepackage{amsmath}
    \usepackage{subfigure}
@@ -13,6 +13,36 @@
    \usepackage[utf8]{inputenc}
    \usepackage[T1]{fontenc}
    \usepackage{ae,aecompl}
+   \usepackage{listings}
+   \usepackage{courier}
+   \lstset{
+         basicstyle=\tiny,
+ %        basicstyle=\footnotesize\ttfamily, % Standardschrift
+         numbers=left,               % Ort der Zeilennummern
+         numberstyle=\tiny,          % Stil der Zeilennummern
+         stepnumber=1,               % Abstand zwischen den Zeilennummern
+         numbersep=5pt,              % Abstand der Nummern zum Text
+         tabsize=1,                  % Groesse von Tabs
+         extendedchars=true,         %
+         breaklines=true,            % Zeilen werden Umgebrochen
+         keywordstyle=\color{blue},
+         frame=b,         
+         stringstyle=\color{green}\ttfamily, % Farbe der String
+         showspaces=false,           % Leerzeichen anzeigen ?
+         showtabs=false,             % Tabs anzeigen ?
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         commentstyle=\color{red},
+         showstringspaces=false      % Leerzeichen in Strings anzeigen ?        
+   }
+   \lstloadlanguages{Java} 
+
+   \usepackage{caption}
+   \DeclareCaptionFont{white}{\color{white}}
+   \DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+   \captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
 
    \setlength{\heavyrulewidth}{0.10em}
    \setlength{\lightrulewidth}{0.03em}
