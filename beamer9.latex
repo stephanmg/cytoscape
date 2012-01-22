@@ -1,8 +1,8 @@
 \documentclass[hyperref={bookmarks=true}]{beamer}
    \title[Network analysis with Cytoscape]{Network analysis with Cytoscape}
-   \author[Group 1]{Kai, Stefan \& Stephan}
-   \date{02/08/12}
-   \institute{Lecture system's biology}
+   \author[Group 1]{presented by Kai, Stefan \& Stephan}
+   \date{02/08/2012}
+   \institute{in lecture on system's biology}
 
    \usepackage{amsmath}
    \usepackage{subfigure}
