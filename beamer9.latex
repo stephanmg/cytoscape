@@ -2,7 +2,7 @@
    \title[Network analysis with Cytoscape]{Network analysis with Cytoscape}
    \author[Group 1]{presented by Kai, Stefan \& Stephan}
    \date{02/08/2012}
-   \institute{in lecture on system's biology}
+   \institute[lecture on systems bioinformatics]{in lecture on systems bioinformatics}
 
    \usepackage{amsmath}
    \usepackage{subfigure}
