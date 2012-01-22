@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.12)  21 JAN 2012 15:24
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.12)  22 JAN 2012 14:20
 entering extended mode
  %&-line parsing enabled.
 **beamer9.latex
@@ -1420,7 +1420,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  18933 strings out of 495061
  336243 string characters out of 1182620
- 647256 words of memory out of 3000000
+ 647298 words of memory out of 3000000
  21467 multiletter control sequences out of 15000+50000
  53363 words of font info for 109 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
@@ -1436,7 +1436,7 @@ e/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-texlive/fonts/t
 ype1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-texlive/fonts/type1/public
 /amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
 /cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on beamer9.pdf (26 pages, 329882 bytes).
+Output written on beamer9.pdf (26 pages, 330169 bytes).
 PDF statistics:
  821 PDF objects out of 1000 (max. 8388607)
  55 named destinations out of 1000 (max. 500000)
