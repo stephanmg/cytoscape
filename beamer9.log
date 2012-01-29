@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.12)  22 JAN 2012 17:05
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.12)  29 JAN 2012 12:45
 entering extended mode
  %&-line parsing enabled.
 **beamer9.latex
@@ -1364,43 +1364,56 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 37--37
 ]) (./inc/latex/results.latex
 (./beamer9.toc) [17
 
+] [18
+
+] [19
+
 ]
-<inc/img/Glyco1/AvgClustCoeffDistr.png, id=520, 682.55pt x 421.575pt>
-File: inc/img/Glyco1/AvgClustCoeffDistr.png Graphic file (type png)
+<inc/img/Glyco1/InDegreeDistr.png, id=579, 682.55pt x 421.575pt>
+File: inc/img/Glyco1/InDegreeDistr.png Graphic file (type png)
 
-<use inc/img/Glyco1/AvgClustCoeffDistr.png>
-<inc/img/Glyco2/AvgClusteringCoeffDistr.png, id=522, 682.55pt x 421.575pt>
-File: inc/img/Glyco2/AvgClusteringCoeffDistr.png Graphic file (type png)
+<use inc/img/Glyco1/InDegreeDistr.png>
+<inc/img/Glyco2/InDegree.png, id=581, 682.55pt x 421.575pt>
+File: inc/img/Glyco2/InDegree.png Graphic file (type png)
 
-<use inc/img/Glyco2/AvgClusteringCoeffDistr.png> [18
+<use inc/img/Glyco2/InDegree.png> [20
 
- <./inc/img/Glyco1/AvgClustCoeffDistr.png> <./inc/img/Glyco2/AvgClusteringCoeff
-Distr.png>]
-<inc/img/Glyco1/BetweennessCentr.png, id=552, 682.55pt x 421.575pt>
-File: inc/img/Glyco1/BetweennessCentr.png Graphic file (type png)
+ <./inc/img/Glyco1/InDegreeDistr.png> <./inc/img/Glyco2/InDegree.png>]
+<inc/img/Glyco1/OutDegreeDistr.png, id=611, 682.55pt x 421.575pt>
+File: inc/img/Glyco1/OutDegreeDistr.png Graphic file (type png)
 
-<use inc/img/Glyco1/BetweennessCentr.png>
-<inc/img/Glyco2/BetweennessCentr.png, id=553, 682.55pt x 421.575pt>
-File: inc/img/Glyco2/BetweennessCentr.png Graphic file (type png)
+<use inc/img/Glyco1/OutDegreeDistr.png>
+<inc/img/Glyco2/OutDegree.png, id=612, 682.55pt x 421.575pt>
+File: inc/img/Glyco2/OutDegree.png Graphic file (type png)
 
-<use inc/img/Glyco2/BetweennessCentr.png> [19
+<use inc/img/Glyco2/OutDegree.png> [21
 
- <./inc/img/Glyco1/BetweennessCentr.png> <./inc/img/Glyco2/BetweennessCentr.png
->] [20
+ <./inc/img/Glyco1/OutDegreeDistr.png> <./inc/img/Glyco2/OutDegree.png>] [22
 
-] [21
+]
+<inc/img/Glyco1/ShortPathLengthDistr.png, id=665, 682.55pt x 421.575pt>
+File: inc/img/Glyco1/ShortPathLengthDistr.png Graphic file (type png)
 
-] [22
+<use inc/img/Glyco1/ShortPathLengthDistr.png>
+<inc/img/Glyco2/ShortestPathLengthDistr.png, id=666, 682.55pt x 421.575pt>
+File: inc/img/Glyco2/ShortestPathLengthDistr.png Graphic file (type png)
+
+<use inc/img/Glyco2/ShortestPathLengthDistr.png> [23
+
+ <./inc/img/Glyco1/ShortPathLengthDistr.png> <./inc/img/Glyco2/ShortestPathLeng
+thDistr.png>] [24
+
+] [25
 
 ])
-(./inc/latex/conclusion.latex (./beamer9.toc) [23
+(./inc/latex/conclusion.latex (./beamer9.toc) [26
 
-] [24
+] [27
 
 ] (./beamer9.toc)
-[25
+[28
 
-] [26
+] [29
 
 ])
 \tf@nav=\write6
@@ -1418,27 +1431,30 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18933 strings out of 495061
- 336243 string characters out of 1182620
+ 19003 strings out of 495061
+ 338122 string characters out of 1182620
  647307 words of memory out of 3000000
- 21467 multiletter control sequences out of 15000+50000
- 53363 words of font info for 109 fonts, out of 3000000 for 9000
+ 21526 multiletter control sequences out of 15000+50000
+ 54070 words of font info for 111 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  49i,16n,66p,473b,1406s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/
-amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
-cmss10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss12.pfb>
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-texlive/fonts/t
-ype1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
-/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on beamer9.pdf (26 pages, 330186 bytes).
+ve/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmssi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmssi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf
+-texlive/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on beamer9.pdf (29 pages, 385919 bytes).
 PDF statistics:
- 821 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 920 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
