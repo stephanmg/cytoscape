@@ -1,31 +1,96 @@
 \section{Results}
-\begin{frame}{Results I}
-\dots give example results from network 1 and network2
+%-------------------------------------------------
+\begin{frame}{Results - Centralities}
+	\begin{itemize}
+		\item determine the relative importance of a vertex within a graph
+		\item many centraltity concepts were first developed in social network analysis
+		\begin{description}
+			\item[-->] e.g. how influential a person is within a social network
+		\end{description}
+	\end{itemize}
+	
+	\begin{definition}[Four measures of centrality]
+		\begin{enumerate}
+			\item degree centrality
+			\item eccentricity centrality			
+			\item closeness centrality
+			\item betweeness centrality
+		\end{enumerate}
+	\end{definition}
+\end{frame}
+%-------------------------------------------------
+\begin{frame}{Results - Degree Centrality}
+	\begin{definition}[Degree Centrality]
+		$C_{deg}(v) = \{e|e \in E and v \in e\}$
+	\end{definition}
+	\begin{itemize}
+		\item counts the number of edges attached to a vertex
+		\item a local centrality measure
+		\begin{description}
+			\item[-->] only direct neighborhood considered 
+		\end{description}
+		\item directed graphs:
+		\begin{description}
+			\item[-->] indegree (interpreted as "popularity")
+			\item[-->] outdegree (interpreted as "gregariousness")
+		\end{description}
+	\end{itemize}
+\end{frame}
+%-------------------------------------------------
+\begin{frame}{Results - Degree Centrality}
 \begin{figure}
-\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/AvgClustCoeffDistr.png}}\hfill
-\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/AvgClusteringCoeffDistr.png}}
-\caption{Avgerage Clustering Coefficient Centrality}
+\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/InDegreeDistr.png}}\hfill
+\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/InDegree.png}}
+\caption{Indegree Centrality}
 \end{figure}
 \end{frame}
-
-\begin{frame}{Results II}
+%-------------------------------------------------
+\begin{frame}{Results - Degree Centrality}
 \begin{figure}
-\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/BetweennessCentr.png}}\hfill
-\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/BetweennessCentr.png}}
-\caption{Betweeness Centrality}
+\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/OutDegreeDistr.png}}\hfill
+\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/OutDegree.png}}
+\caption{Outdegree Centrality}
 \end{figure}
 \end{frame}
-
-\begin{frame}{Results \dots}
-\dots more results \dots
+%-------------------------------------------------
+\begin{frame}{Results - Eccentricity Centrality}
+	\begin{definition}[Eccentricity Centrality]
+		$C_{ecc}(s) = \frac{1}{max\{d_{st}|t\in V\}}$
+	\end{definition}
+	\begin{itemize}
+		\item determine the maximum distance between every two vertices
+		\item central vertices get low values
+		\item centralities require high centrality values
+		\begin{description}
+			\item[-->] reciprocal is used as centrality value
+		\end{description}
+		\item only for CONNECTED networks
+	\end{itemize}
 \end{frame}
-
-\begin{frame}{Differences}
-\begin{block}{To other groups}
-\dots
-\end{block}
+%-------------------------------------------------
+\begin{frame}{Results - Eccentricity}
+	\begin{figure}
+\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/ShortPathLengthDistr.png}}\hfill
+\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/ShortestPathLengthDistr.png}}
+\caption{Eccentricity Centrality}
+\end{figure}
 \end{frame}
-
+%-------------------------------------------------
+\begin{frame}{Results - Closeness Centrality}
+	\begin{definition}[Eccentricity Centrality]
+		$C_{clo}(s) = \frac{1}{\sum{...}}$
+	\end{definition}
+	\begin{itemize}
+		\item determine the maximum distance between every two vertices
+		\item central vertices get low values
+		\item centralities require high centrality values
+		\begin{description}
+			\item[-->] reciprocal is used as centrality value
+		\end{description}
+		\item only for CONNECTED networks
+	\end{itemize}
+\end{frame}
+%-------------------------------------------------
 \begin{frame}{Problems}
 \begin{block}{To other groups}
 \dots
