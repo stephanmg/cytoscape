@@ -1,4 +1,4 @@
-package katz.plugin;
+package randic.plugin;
 
 import java.util.List;
 import java.awt.event.ActionEvent;

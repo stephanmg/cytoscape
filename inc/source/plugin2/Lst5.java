@@ -6,8 +6,8 @@
             double alpha;
             Arrays.sort(eigs);
 
-            if (eigs[eigs.length - 1] == 0) alpha = 1.0;
-            else alpha = 1.0 / eigs[eigs.length - 1];
+            if (eigs[eigs.length - 1] == 0) alpha = 0.1; // emulates degree centrality
+            else alpha = 1.0 / Math.abs(eigs[eigs.length - 1]);
 
             double[][] values = ((I.minus(M.transpose().times(alpha))).inverse()).minus(I).times(IVec).getArrayCopy();
             StringBuilder sb = new StringBuilder();

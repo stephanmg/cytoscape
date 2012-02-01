@@ -1,30 +1,51 @@
 \section{Code}
 \begin{frame}{Plugin for calculation of Katz's Index}
 \begin{definition}[Katz's Index]
-\dots
+Let $A$ denote the adjacency matrix of a \textbf{directed} or \textbf{undirected} graph with dim($A$) $=$ $n \times n$ and let $\alpha$ denote a non-negative damping factor.
+\begin{equation}
+I_{Katz}(i) = \sum_{k=1,..,\infty} \sum_{j=1,..n} \alpha(A^k)_{ji}
+\end{equation}
+$\Leftrightarrow$
+\begin{equation}\label{eq:2}
+I_{Katz} = ((\mathbb{I}_m - \alpha A^T)^ {-1} - \mathbb{I}_m) \mathbb{I}_v
+\end{equation}
 \end{definition}
-We considered two cases: $\alpha$ small and $\alpha = \frac{1}{\lambda_{max}}$.
+For calculations we used Eq. \ref{eq:2} and considered two distinct cases:
+\begin{enumerate}
+\item $\alpha$ small $\Rightarrow$ emulation of degree centrality
+\item $\alpha \in$ $]0,\frac{1}{|\lambda_{max}|}]$ $\Rightarrow$ influence of pathes weighted
+\end{enumerate}
 \end{frame}
-\begin{frame}{Plugin for calculation of Katz's Index - $\alpha$ small}
+\begin{frame}{Plugin for calculation of Katz's Index - $\alpha$ $\equiv$ 0.1}
 \lstinputlisting[firstnumber=1, language=Java, label=KatzPlugin,caption=Necessary import statements]{inc/source/plugin1/Lst1.java}
 \end{frame}
-\begin{frame}{Plugin for calculation of Katz's Index - $\alpha$ small}
+\begin{frame}{Plugin for calculation of Katz's Index - $\alpha$ $\equiv$ 0.1}
 \lstinputlisting[firstnumber=16, language=Java, label=KatzPlugin,caption=Basic class definition]{inc/source/plugin1/Lst2.java}
 \end{frame}
-\begin{frame}{Plugin for calculation of Katz's Index - $\alpha$ small}
+\begin{frame}{Plugin for calculation of Katz's Index - $\alpha$ $\equiv$ 0.1}
 \lstinputlisting[firstnumber=38, language=Java, label=KatzPlugin,caption=Run method (I)]{inc/source/plugin1/Lst3.java}
 \end{frame}
-\begin{frame}{Plugin for calculation of Katz's Index - $\alpha$ small}
+\begin{frame}{Plugin for calculation of Katz's Index - $\alpha$ $\equiv$ 0.1}
 \lstinputlisting[firstnumber=57, language=Java, label=KatzPlugin,caption=Run method (II)]{inc/source/plugin1/Lst4.java}
 \end{frame}
-\begin{frame}{Plugin for calculation of Katz's Index - $\alpha = \frac{1}{\lambda_{max}}$}
+\begin{frame}{Plugin for calculation of Katz's Index - $\alpha \equiv \frac{1}{|\lambda_{max}|}$}
 \lstinputlisting[firstnumber=57, language=Java, label=KatzPlugin,caption=Run method (II)]{inc/source/plugin2/Lst5.java}
 \end{frame}
 
 \begin{frame}{Plugin for calculation of Randic's Index}
 \begin{definition}[Randics's Index]
-\dots
+Let $v(i)$ denote the \#neighbors of vertex $v$ with index $i$ and $N$ \#nodes.
+\begin{equation}
+I_{Randic} = \sum_{i=0}^{N-1} \frac{1}{\sqrt{v(i)}}
+\end{equation}
 \end{definition}
+\begin{exampleblock}{Cave}
+Randic's Index works only for \textbf{undirected} and \textbf{connected} graphs.
+\end{exampleblock}
+\pause
+\begin{block}{Application}
+Currently there is no known application of Randic's Index for the analysis of biological networks.
+\end{block}
 \end{frame}
 \begin{frame}{Plugin for calculation of Randic's Index}
 \lstinputlisting[firstnumber=1, language=Java, label=RandicPlugin,caption=Necessary import statements]{inc/source/plugin3/Lst6.java}

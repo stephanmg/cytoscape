@@ -113,9 +113,9 @@ public class PluginEx2 extends CytoscapePlugin {
             Arrays.sort(eigs);
 
             if (eigs[eigs.length - 1] == 0) {
-                alpha = 1.0;
+                alpha = 0.1; // emulate degree centrality
             } else {
-                alpha = 1.0 / eigs[eigs.length - 1];
+                alpha = 1.0 / Math.abs(eigs[eigs.length - 1]);
             }
 
             Matrix res = ((I.minus(M.transpose().times(alpha))).inverse()).minus(I).times(IVec);
