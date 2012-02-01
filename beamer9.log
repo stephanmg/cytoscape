@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.12)  29 JAN 2012 12:45
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.12)  1 FEB 2012 10:17
 entering extended mode
  %&-line parsing enabled.
-**beamer9.latex
-(./beamer9.latex
+**beamer9.tex
+(./beamer9.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, loaded.
@@ -1217,18 +1217,19 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./beamer9.nav)
-(./inc/latex/title.latex [1
+(./inc/latex/title.tex [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./beamer9.toc) [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(./beamer9.toc) [2
 
-]) (./inc/latex/introduction.latex (./beamer9.toc) [3
+]) (./inc/latex/introduction.tex (./beamer9.toc) [3
+
+] [4
 
 ]
-[4
+[5
 
-] [5
-
-]) (./inc/latex/code.latex (./beamer9.toc) [6
+]) (./inc/latex/code.tex (./beamer9.toc) [6
 
 ]
 LaTeX Font Info:    Try loading font information for U+msa on input line 7.
@@ -1361,8 +1362,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 37--37
 
 (./inc/source/plugin3/Lst8.java) [16
 
-]) (./inc/latex/results.latex
-(./beamer9.toc) [17
+]) (./inc/latex/results.tex (./beamer9.toc) [17
 
 ] [18
 
@@ -1391,11 +1391,11 @@ File: inc/img/Glyco2/OutDegree.png Graphic file (type png)
  <./inc/img/Glyco1/OutDegreeDistr.png> <./inc/img/Glyco2/OutDegree.png>] [22
 
 ]
-<inc/img/Glyco1/ShortPathLengthDistr.png, id=665, 682.55pt x 421.575pt>
+<inc/img/Glyco1/ShortPathLengthDistr.png, id=667, 682.55pt x 421.575pt>
 File: inc/img/Glyco1/ShortPathLengthDistr.png Graphic file (type png)
 
 <use inc/img/Glyco1/ShortPathLengthDistr.png>
-<inc/img/Glyco2/ShortestPathLengthDistr.png, id=666, 682.55pt x 421.575pt>
+<inc/img/Glyco2/ShortestPathLengthDistr.png, id=668, 682.55pt x 421.575pt>
 File: inc/img/Glyco2/ShortestPathLengthDistr.png Graphic file (type png)
 
 <use inc/img/Glyco2/ShortestPathLengthDistr.png> [23
@@ -1403,17 +1403,35 @@ File: inc/img/Glyco2/ShortestPathLengthDistr.png Graphic file (type png)
  <./inc/img/Glyco1/ShortPathLengthDistr.png> <./inc/img/Glyco2/ShortestPathLeng
 thDistr.png>] [24
 
-] [25
+]
+<inc/img/Glyco1/ClosenessCentr.png, id=724, 682.55pt x 421.575pt>
+File: inc/img/Glyco1/ClosenessCentr.png Graphic file (type png)
 
-])
-(./inc/latex/conclusion.latex (./beamer9.toc) [26
+<use inc/img/Glyco1/ClosenessCentr.png>
+File: inc/img/Glyco1/ClosenessCentr.png Graphic file (type png)
 
-] [27
+<use inc/img/Glyco1/ClosenessCentr.png> [25
 
-] (./beamer9.toc)
-[28
+ <./inc/img/Glyco1/ClosenessCentr.png>] [26
+
+] <inc/img/Glyco1/BetweennessCentr.png, id=779, 682.55pt x 421.575pt>
+File: inc/img/Glyco1/BetweennessCentr.png Graphic file (type png)
+
+<use inc/img/Glyco1/BetweennessCentr.png>
+<inc/img/Glyco2/BetweennessCentr.png, id=780, 682.55pt x 421.575pt>
+File: inc/img/Glyco2/BetweennessCentr.png Graphic file (type png)
+
+<use inc/img/Glyco2/BetweennessCentr.png> [27
+
+ <./inc/img/Glyco1/BetweennessCentr.png> <./inc/img/Glyco2/BetweennessCentr.png
+>]) (./inc/latex/conclusion.tex
+(./beamer9.toc) [28
 
 ] [29
+
+] (./beamer9.toc) [30
+
+] [31
 
 ])
 \tf@nav=\write6
@@ -1431,30 +1449,31 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19003 strings out of 495061
- 338122 string characters out of 1182620
+ 19030 strings out of 495061
+ 338721 string characters out of 1182620
  647307 words of memory out of 3000000
- 21526 multiletter control sequences out of 15000+50000
+ 21548 multiletter control sequences out of 15000+50000
  54070 words of font info for 111 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 49i,16n,66p,473b,1406s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,16n,66p,471b,1406s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-texlive/font
-s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
-s/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.
-pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/s
-hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-texlive/fonts/type1/pu
-blic/amsfonts/cm/cmssi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmssi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
-/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf
--texlive/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on beamer9.pdf (29 pages, 385919 bytes).
+ve/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmssi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss
+i8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texm
+f-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fo
+nts/type1/urw/courier/ucrr8a.pfb>
+Output written on beamer9.pdf (31 pages, 437983 bytes).
 PDF statistics:
- 920 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 983 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 

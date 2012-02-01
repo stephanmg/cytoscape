@@ -3,7 +3,7 @@
 \begin{frame}{Results - Centralities}
 	\begin{itemize}
 		\item determine the relative importance of a vertex within a graph
-		\item many centraltity concepts were first developed in social network analysis
+		\item centraltity concepts were first developed in social network analysis
 		\begin{description}
 			\item[-->] e.g. how influential a person is within a social network
 		\end{description}
@@ -21,7 +21,7 @@
 %-------------------------------------------------
 \begin{frame}{Results - Degree Centrality}
 	\begin{definition}[Degree Centrality]
-		$C_{deg}(v) = \{e|e \in E and v \in e\}$
+		$C_{deg}(v) = \{e|e \in E\; and\; v \in e\}$
 	\end{definition}
 	\begin{itemize}
 		\item counts the number of edges attached to a vertex
@@ -68,31 +68,50 @@
 	\end{itemize}
 \end{frame}
 %-------------------------------------------------
-\begin{frame}{Results - Eccentricity}
+\begin{frame}{Results - Eccentricity Centrality}
 	\begin{figure}
-\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/ShortPathLengthDistr.png}}\hfill
-\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/ShortestPathLengthDistr.png}}
-\caption{Eccentricity Centrality}
-\end{figure}
+	\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/ShortPathLengthDistr.png}}\hfill
+	\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/ShortestPathLengthDistr.png}}
+	\caption{Eccentricity Centrality}
+	\end{figure}
 \end{frame}
 %-------------------------------------------------
 \begin{frame}{Results - Closeness Centrality}
-	\begin{definition}[Eccentricity Centrality]
-		$C_{clo}(s) = \frac{1}{\sum{...}}$
+	\begin{definition}[Closeness Centrality]
+		$C_{clo}(s) = \frac{1}{\sum\limits_{t\in V} d_{st}}$
 	\end{definition}
 	\begin{itemize}
-		\item determine the maximum distance between every two vertices
-		\item central vertices get low values
-		\item centralities require high centrality values
-		\begin{description}
-			\item[-->] reciprocal is used as centrality value
-		\end{description}
-		\item only for CONNECTED networks
+		\item $C_{clo}$ of a vertex s is the sum of shortest path form s to all other vertices  
+		\item degree of interaction in the network
+		\item the closer a point is to all the rest, the more effective and independent he can reach them
 	\end{itemize}
 \end{frame}
 %-------------------------------------------------
-\begin{frame}{Problems}
-\begin{block}{To other groups}
-\dots
-\end{block}
+\begin{frame}{Results - Closeness Centrality}
+	\begin{figure}
+	\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/ClosenessCentr.png}}\hfill
+	\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco1/ClosenessCentr.png}} %TODO hier noch für Glyco 2 einbinden
+	\caption{Closeness Centrality}
+	\end{figure}
+\end{frame}
+%-------------------------------------------------
+\begin{frame}{Results - Betweenness Centrality}
+	\begin{definition}[Betweenness Centrality]
+		$C_{spb}(v)=\sum\limits_{s \in V\; and\; s \neq v} \sum\limits_{t \in V\; and\; s \neq v} \delta_{st}(v)$
+	\end{definition}
+	\begin{itemize}
+		\item center of attention: indirect relationships 
+		\begin{description}
+			\item[-->] Control of interaction
+		\end{description}
+		\item v is the more powerful the more shortest paths between other vertices it can interrupt
+	\end{itemize}
+\end{frame}
+%-------------------------------------------------
+\begin{frame}{Results - Betweenness Centrality}
+	\begin{figure}
+	\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/BetweennessCentr.png}}\hfill
+	\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/BetweennessCentr.png}}
+	\caption{Closeness Centrality}
+	\end{figure}
 \end{frame}

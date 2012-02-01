@@ -2,5 +2,5 @@
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@sectionintoc {2}{Code}{6}{0}{2}
 \beamer@sectionintoc {3}{Results}{17}{0}{3}
-\beamer@sectionintoc {4}{Conclusion}{26}{0}{4}
-\beamer@sectionintoc {5}{Resources}{28}{0}{5}
+\beamer@sectionintoc {4}{Conclusion}{28}{0}{4}
+\beamer@sectionintoc {5}{Resources}{30}{0}{5}
