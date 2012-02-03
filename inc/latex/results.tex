@@ -39,16 +39,18 @@
 %-------------------------------------------------
 \begin{frame}{Results - Degree Centrality}
 \begin{figure}
-\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/InDegreeDistr.png}}\hfill
-\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/InDegree.png}}
+	\includegraphics[scale=0.4]{inc/img/Glyco1/InDegreeDistr.png}
+%\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/InDegreeDistr.png}}\hfill
+%\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/InDegree.png}}
 \caption{Indegree Centrality}
 \end{figure}
 \end{frame}
 %-------------------------------------------------
 \begin{frame}{Results - Degree Centrality}
 \begin{figure}
-\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/OutDegreeDistr.png}}\hfill
-\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/OutDegree.png}}
+	\includegraphics[scale=0.4]{inc/img/Glyco1/OutDegreeDistr.png}
+%\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/OutDegreeDistr.png}}\hfill
+%\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/OutDegree.png}}
 \caption{Outdegree Centrality}
 \end{figure}
 \end{frame}
@@ -70,8 +72,9 @@
 %-------------------------------------------------
 \begin{frame}{Results - Eccentricity Centrality}
 	\begin{figure}
-	\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/ShortPathLengthDistr.png}}\hfill
-	\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/ShortestPathLengthDistr.png}}
+		\includegraphics[scale=0.4]{inc/img/Glyco1/ShortPathLengthDistr.png}
+	%\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/ShortPathLengthDistr.png}}\hfill
+	%\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/ShortestPathLengthDistr.png}}
 	\caption{Eccentricity Centrality}
 	\end{figure}
 \end{frame}
@@ -89,8 +92,9 @@
 %-------------------------------------------------
 \begin{frame}{Results - Closeness Centrality}
 	\begin{figure}
-	\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/ClosenessCentr.png}}\hfill
-	\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco1/ClosenessCentr.png}} %TODO hier noch für Glyco 2 einbinden
+		\includegraphics[scale=0.4]{inc/img/Glyco1/ClosenessCentr.png}
+	%\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/ClosenessCentr.png}}\hfill
+	%\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco1/ClosenessCentr.png}} %TODO hier noch für Glyco 2 einbinden
 	\caption{Closeness Centrality}
 	\end{figure}
 \end{frame}
@@ -110,8 +114,29 @@
 %-------------------------------------------------
 \begin{frame}{Results - Betweenness Centrality}
 	\begin{figure}
-	\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/BetweennessCentr.png}}\hfill
-	\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/BetweennessCentr.png}}
+		\includegraphics[scale=0.4]{inc/img/Glyco1/BetweennessCentr.png}
+	%\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/BetweennessCentr.png}}\hfill
+	%\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/BetweennessCentr.png}}
 	\caption{Closeness Centrality}
+	\end{figure}
+\end{frame}
+%-------------------------------------------------
+\begin{frame}{Results - Conclusion}
+	\begin{itemize}
+		\item the analysis tools are not very helpful
+		\begin{description}
+			\item[-->] cannot see which vertex has which centrality
+			\item[-->] only give a statistical overview of the whole network
+		\end{description}
+		\item \textbf{but} you can select a vertex in the network window and get an overview of all centralities from the selected vertex
+	\end{itemize}
+\end{frame}
+%-------------------------------------------------
+\begin{frame}{Results - Betweenness Centrality}
+	\begin{figure}
+		\includegraphics[scale=0.35]{inc/img/Glyco1/Vertex_Centricities.PNG}
+	%\subfigure[Glyco1]{\includegraphics[scale=0.25]{inc/img/Glyco1/BetweennessCentr.png}}\hfill
+	%\subfigure[Glyco2]{\includegraphics[scale=0.25]{inc/img/Glyco2/BetweennessCentr.png}}
+	\caption{Centrality Overview}
 	\end{figure}
 \end{frame}

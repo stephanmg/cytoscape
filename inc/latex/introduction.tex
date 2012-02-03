@@ -3,6 +3,99 @@
 \dots why should we care about glycolysis and gluconeogeneses
 \end{frame}
 
+\begin{frame}{Introduction}
+	\begin{itemize}
+		\item using the tool CellDesigner to build a glycolysis/gluconeogenese network,
+		\item import it into the tool Cytoscape,
+		\item analyse the imported network and
+		\item implement missing centralities and indices by coding some plugins
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Glycolysis/Gluconeogenese}
+	\begin{itemize}
+		\item catabolic linear pathway of glycolysis deals with the breakdown and extraction of energy from glucose
+		\item the reverse anabolic process - gluconeogenesis - is equally important
+		\item gluconeogenesis helps to keep blood glucose levels within critical limits
+		\item these processes provide many points for regulation
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Glycolysis}
+	\begin{figure}[htbp]
+	   \centering
+	   \includegraphics[width=0.6\textwidth]{inc/img/circle}
+	   \caption{Glycolysis vs. Gluconeogenese}
+	   \label{fig:circle}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Glycolysis}
+	\begin{figure}[htbp]
+	   \centering
+	   \includegraphics[width=0.6\textwidth]{inc/img/equation}
+	   \caption{Glycolysis vs. Gluconeogenese}
+	   \label{fig:circle}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Glycolysis and Disease}
+	\begin{itemize}
+		\item Genetic disease - mutations are generally rare due to importance of the metabolic pathway
+		\item Cancer - typically tumor cells have glycolytic rates that are up to 200 times higher
+		\item Other disease - disfunctioning glycolysis or glucose metabolism has been associated with some other diseases
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Glycolysis and Cancer}
+	\begin{itemize}
+		\item Ubiquitous gene overexpression appears to be restricted to glycolysis, in conclusion, Glycolysis is indeed special.
+		\item this may also be of some interest for therapy, increased Glucose consumption can be observed with clinical tumour imaging 
+		\item Gene expression patterns in general can be modified by external factors such as drugs or components of nutrition
+		\item one may envision substances that modify expression of glycolysis genes as complementary to conventional cancer therapies
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{itemize}
+		\item
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{itemize}
+		\item
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Literature}
+	\begin{itemize}
+		\item R. A. Gatenby and R. J. Gillies, Why do cancers have high aerobic glycolysis?, Nature Review Cance, Vol. 4, p. 891-899, November 2004.
+		\item B. Altenberga and K.O. Greulich, Genes of glycolysis are ubiquitously overexpressed in 24 cancer classes, Genomics Vol. 84, p. 1014-1020, September 2004.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Cell Designer}
+	\begin{itemize}
+		\item tried to model a glycolysis network
+		\item tool very user unfriendly
+		\item export into a format for cytoscape resulted in "strange" networks
+		\item this task was skipped
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Cytoscape}
+	\begin{itemize}
+		\item provides many useful plugins 
+		\item plugin KGMLReader used to import KEGG Glycolysis network
+		\item modified the network to make it user readable
+		\item 
+	\end{itemize}
+\end{frame}
+
+
 \begin{frame}{Introduction II}
 \dots basic setup of our two networks ... how we modelled them and what did not work (CellDesigner) ...
 \end{frame}
+
+
