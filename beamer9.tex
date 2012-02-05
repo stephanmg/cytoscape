@@ -69,10 +69,31 @@
    \renewcommand*\thesubfigure{(\alph{subfigure})}
    \renewcommand*\figurename{Fig. \thefigure}
 
+\newcommand{\LaunchBinary}[2]{%
+  % #1: layer name,
+  % #2: link text
+  \leavevmode%
+  \pdfstartlink user {
+    /Subtype /Link
+    /Border [0 0 0]%
+    /A <<
+      /F <<
+         /DOS (xxx)
+         /Unix (xxx)
+         /Mac (#1)
+      >>
+      /S /Launch
+    >>
+  }#2%
+  \pdfendlink%
+}
+
 \begin{document}
    \input{inc/latex/title.tex}
    \input{inc/latex/introduction.tex}
    \input{inc/latex/code.tex}
    \input{inc/latex/results.tex}
+ %  \input{inc/latex/literature.tex}
+   % literatur steht schon in bib.tex drin :)
    \input{inc/latex/bib.tex}
 \end{document}
