@@ -50,13 +50,13 @@ Let $v(i)$ denote the \#neighbors of vertex $v$ with index $i$ and $N$ \#nodes.
 I_{Randic} = \sum_{i=0}^{N-1} \frac{1}{\sqrt{v(i)}}
 \end{equation}
 \end{definition}
-\begin{exampleblock}{Cave}
+\begin{alertblock}{Cave}
 Randic's Index works only for \textbf{undirected} and \textbf{connected} graphs.
-\end{exampleblock}
+\end{alertblock}
 \pause
-\begin{block}{Application}
+\begin{exampleblock}{Application}
 Currently there is no known application of Randic's Index for the analysis of biological networks.
-\end{block}
+\end{exampleblock}
 \end{frame}
 \begin{frame}{Plugin for calculation of Randic's Index}
 \lstinputlisting[firstnumber=1, language=Java, label=RandicPlugin,caption=Necessary import statements]{inc/source/plugin3/Lst6.java}
