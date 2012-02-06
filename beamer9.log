@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.12)  6 FEB 2012 11:58
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.12)  6 FEB 2012 17:55
 entering extended mode
  %&-line parsing enabled.
 **beamer9.tex
@@ -1517,7 +1517,7 @@ y10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></us
 r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texm
 f-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-texl
 ive/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on beamer9.pdf (43 pages, 728868 bytes).
+Output written on beamer9.pdf (43 pages, 728856 bytes).
 PDF statistics:
  1310 PDF objects out of 1440 (max. 8388607)
  95 named destinations out of 1000 (max. 500000)
