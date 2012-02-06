@@ -1,4 +1,15 @@
 \section{Code}
+\begin{frame}{Choice of programming language}
+\begin{remark}[supported languages]
+\textbf{Cytoscape} supports various scripting language interfaces (e. g. Python, Ruby, Java, \dots) for accessing its API through plugins. \\
+\end{remark}
+But \underline{note}: Depending on the version of the \textbf{plugin} and \textbf{cytoscape} there are incompabilities, i. e. only a specific combination of \textbf{them} works.
+\pause
+\begin{exampleblock}{Java}
+We chose Java solely because the availability of a template plugin to us as well it was suggested by a colleague of the group.
+\end{exampleblock}
+\end{frame}
+
 \begin{frame}{Plugin for calculation of Katz's Index}
 \begin{definition}[Katz's Index]
 Let $A$ denote the adjacency matrix of a \textbf{directed} or \textbf{undirected} graph with dim($A$) $=$ $n \times n$ and let $\alpha$ denote a non-negative damping factor.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.12)  5 FEB 2012 16:13
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.12)  6 FEB 2012 11:53
 entering extended mode
  %&-line parsing enabled.
 **beamer9.tex
@@ -1278,53 +1278,61 @@ File: data/Graph/GlycoGraph.png Graphic file (type png)
 ]) (./inc/latex/code.tex (./beamer9.toc) [15
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 18.
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10.95> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 11.
 
+
+LaTeX Font Warning: Font shape `T1/aess/bx/it' undefined
+(Font)              using `T1/aess/bx/n' instead on input line 11.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 11.
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 18.
+LaTeX Font Info:    Try loading font information for U+msb on input line 11.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 18.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 11.
 
 (/usr/share/texmf-texlive/tex/latex/stmaryrd/Ustmry.fd)
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10.95> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 18.
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <8> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 18.
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 11.
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <6> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 18.
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 11.
  [16
+
+] [17
+
+] [18
 
 ]
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <9> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 21.
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 33.
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <5> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 21.
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 33.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 21--21
+Overfull \hbox (6.0pt too wide) in paragraph at lines 33--33
 [][][][][][][]  
  []
 
 (./inc/source/plugin1/Lst1.java)
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <14.4> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 21.
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 33.
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 21.
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 33.
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <7> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 21.
- [17
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 33.
+ [19
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{KatzPlugin})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.24 \end{frame}
+l.36 \end{frame}
                 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 24--24
+Overfull \hbox (6.0pt too wide) in paragraph at lines 36--36
 [][][][][][][]  
  []
 
@@ -1333,140 +1341,140 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)) [18
+)) [20
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{KatzPlugin})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 \end{frame}
+l.39 \end{frame}
                 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 27--27
+Overfull \hbox (6.0pt too wide) in paragraph at lines 39--39
 [][][][][][][]  
  []
 
-(./inc/source/plugin1/Lst3.java) [19
+(./inc/source/plugin1/Lst3.java) [21
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{KatzPlugin})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 \end{frame}
+l.42 \end{frame}
                 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 30--30
+Overfull \hbox (6.0pt too wide) in paragraph at lines 42--42
 [][][][][][][]  
  []
 
-(./inc/source/plugin1/Lst4.java) [20
+(./inc/source/plugin1/Lst4.java) [22
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{KatzPlugin})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 \end{frame}
+l.45 \end{frame}
                 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 33--33
+Overfull \hbox (6.0pt too wide) in paragraph at lines 45--45
 [][][][][][][]  
  []
 
 (./inc/source/plugin2/Lst5.java)
-Overfull \vbox (9.24918pt too high) detected at line 33
+Overfull \vbox (9.24918pt too high) detected at line 45
  []
 
-[21
+[23
 
-] [22
+] [24
 
-] [23
+] [25
 
 ]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 52--52
+Overfull \hbox (6.0pt too wide) in paragraph at lines 64--64
 [][][][][][][]  
  []
 
-(./inc/source/plugin3/Lst6.java) [24
+(./inc/source/plugin3/Lst6.java) [26
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{RandicPlugin
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.55 \end{frame}
+l.67 \end{frame}
                 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 55--55
+Overfull \hbox (6.0pt too wide) in paragraph at lines 67--67
 [][][][][][][]  
  []
 
-(./inc/source/plugin3/Lst7.java) [25
+(./inc/source/plugin3/Lst7.java) [27
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{RandicPlugin
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.58 \end{frame}
+l.70 \end{frame}
                 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 58--58
+Overfull \hbox (6.0pt too wide) in paragraph at lines 70--70
 [][][][][][][]  
  []
 
-(./inc/source/plugin3/Lst8.java) [26
+(./inc/source/plugin3/Lst8.java) [28
 
-]) (./inc/latex/results.tex (./beamer9.toc) [27
+]) (./inc/latex/results.tex (./beamer9.toc) [29
 
-] [28
+] [30
 
-] [29
+] [31
 
 ]
-<inc/img/Glyco1/InDegreeDistr.png, id=845, 682.55pt x 421.575pt>
+<inc/img/Glyco1/InDegreeDistr.png, id=898, 682.55pt x 421.575pt>
 File: inc/img/Glyco1/InDegreeDistr.png Graphic file (type png)
 
-<use inc/img/Glyco1/InDegreeDistr.png> [30
+<use inc/img/Glyco1/InDegreeDistr.png> [32
 
- <./inc/img/Glyco1/InDegreeDistr.png>] <inc/img/Glyco1/OutDegreeDistr.png, id=8
-74, 682.55pt x 421.575pt>
+ <./inc/img/Glyco1/InDegreeDistr.png>] <inc/img/Glyco1/OutDegreeDistr.png, id=9
+27, 682.55pt x 421.575pt>
 File: inc/img/Glyco1/OutDegreeDistr.png Graphic file (type png)
 
-<use inc/img/Glyco1/OutDegreeDistr.png> [31
+<use inc/img/Glyco1/OutDegreeDistr.png> [33
 
- <./inc/img/Glyco1/OutDegreeDistr.png>] [32
+ <./inc/img/Glyco1/OutDegreeDistr.png>] [34
 
 ]
-<inc/img/Glyco1/ShortPathLengthDistr.png, id=929, 682.55pt x 421.575pt>
+<inc/img/Glyco1/ShortPathLengthDistr.png, id=981, 682.55pt x 421.575pt>
 File: inc/img/Glyco1/ShortPathLengthDistr.png Graphic file (type png)
 
-<use inc/img/Glyco1/ShortPathLengthDistr.png> [33
+<use inc/img/Glyco1/ShortPathLengthDistr.png> [35
 
- <./inc/img/Glyco1/ShortPathLengthDistr.png>] [34
+ <./inc/img/Glyco1/ShortPathLengthDistr.png>] [36
 
 ]
-<inc/img/Glyco1/ClosenessCentr.png, id=984, 682.55pt x 421.575pt>
+<inc/img/Glyco1/ClosenessCentr.png, id=1036, 682.55pt x 421.575pt>
 File: inc/img/Glyco1/ClosenessCentr.png Graphic file (type png)
 
-<use inc/img/Glyco1/ClosenessCentr.png> [35
+<use inc/img/Glyco1/ClosenessCentr.png> [37
 
- <./inc/img/Glyco1/ClosenessCentr.png>] [36
+ <./inc/img/Glyco1/ClosenessCentr.png>] [38
 
-] <inc/img/Glyco1/BetweennessCentr.png, id=1038, 682.55pt x 421.575pt>
+] <inc/img/Glyco1/BetweennessCentr.png, id=1091, 682.55pt x 421.575pt>
 File: inc/img/Glyco1/BetweennessCentr.png Graphic file (type png)
 
-<use inc/img/Glyco1/BetweennessCentr.png> [37
+<use inc/img/Glyco1/BetweennessCentr.png> [39
 
- <./inc/img/Glyco1/BetweennessCentr.png>] [38
+ <./inc/img/Glyco1/BetweennessCentr.png>] [40
 
 ]
-<inc/img/Glyco1/Vertex_Centricities.PNG, id=1092, 962.84718pt x 572.1375pt>
+<inc/img/Glyco1/Vertex_Centricities.PNG, id=1144, 962.84718pt x 572.1375pt>
 File: inc/img/Glyco1/Vertex_Centricities.PNG Graphic file (type png)
 
 <use inc/img/Glyco1/Vertex_Centricities.PNG>
 Overfull \vbox (9.18465pt too high) detected at line 142
  []
 
-[39
+[41
 
  <./inc/img/Glyco1/Vertex_Centricities.PNG>]) (./inc/latex/bib.tex
-(./beamer9.toc) [40
+(./beamer9.toc) [42
 
-] [41
+] [43
 
  </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>])
 \tf@nav=\write6
@@ -1480,14 +1488,17 @@ Overfull \vbox (9.18465pt too high) detected at line 142
 
  (./beamer9.aux)
 
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19150 strings out of 495061
- 341668 string characters out of 1182620
+ 19158 strings out of 495061
+ 341756 string characters out of 1182620
  656392 words of memory out of 3000000
- 21638 multiletter control sequences out of 15000+50000
+ 21642 multiletter control sequences out of 15000+50000
  54977 words of font info for 114 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  49i,16n,66p,471b,1406s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1506,9 +1517,9 @@ y10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></us
 r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texm
 f-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-texl
 ive/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on beamer9.pdf (41 pages, 711567 bytes).
+Output written on beamer9.pdf (43 pages, 728075 bytes).
 PDF statistics:
- 1255 PDF objects out of 1440 (max. 8388607)
- 91 named destinations out of 1000 (max. 500000)
+ 1308 PDF objects out of 1440 (max. 8388607)
+ 95 named destinations out of 1000 (max. 500000)
  169 words of extra memory for PDF output out of 10000 (max. 10000000)
 
